@@ -1,9 +1,9 @@
 {
   "name": "json-key-diff",
   "version": "1.0.0-alpha1",
-  "description": "compare two json files with each other by keys",
-  "main": "src/index.js",
-  "bin": "src/index.js",
+  "description": "compare two json files with each other by keys and prints out the differences",
+  "main": "bin/index.js",
+  "bin": "bin/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/matseee/json-key-diff.git"

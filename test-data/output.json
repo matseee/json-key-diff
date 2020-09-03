@@ -1,0 +1,9 @@
+{
+    "test-data/test1.json": {
+        "random6": "Just in test 2",
+        "random14": "Just in test 2"
+    },
+    "test-data/test2.json": {
+        "random7": "Just in test 1"
+    }
+}
