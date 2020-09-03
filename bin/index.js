@@ -1,17 +1,18 @@
 #!/usr/bin/env node
+
 const args = require('args');
 const jsonKeyDiff = require('./json-key-diff');
 
-args.option('f', 'File, 1st .json-file')
-    .option('w', 'With, 2st .json-file')
-    .option('o', 'Output, output .json-file');
+args.option('o', 'Output-Filepath');
 
 const params = args.parse(process.argv, {
-    name: 'json-key-diff'
+    name: 'json-key-diff',
+    value: '<file1> <file2>'
 });
 
-if (params.f && params.w) {
-    jsonKeyDiff(params.f, params.w, params.o);
+
+if (args.sub[0] && args.sub[1]) {
+    jsonKeyDiff(args.sub[0], args.sub[1], params.o);
 } else {
     args.showHelp();
 }

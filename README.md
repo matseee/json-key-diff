@@ -9,22 +9,20 @@ npm install --global json-key-diff
 
 ## usage
 ```
-  Usage: json-key-diff [options] [command]
+  Usage: json-key-diff [options] [command] <file1> <file2>
   
   Commands:
     help     Display help
     version  Display version
   
   Options:
-    -f, --f        File, 1st .json-file
     -h, --help     Output usage information
-    -o, --o        Output, output .json-file
+    -o, --o        Output-Filepath
     -v, --version  Output the version number
-    -w, --w        With, 2st .json-file
 ```
 
 ## example
-`test-data/test1.json`:
+`test1.json`:
 
 ```json
 {
@@ -35,7 +33,7 @@ npm install --global json-key-diff
 }
 ```
 
-`test-data/test2.json`:
+`test2.json`:
 
 ```json
 {
@@ -47,11 +45,11 @@ npm install --global json-key-diff
 }
 ```
 
-`json-key-diff -f test-data/test1.json -w test-data/test2.json -o test-data/output.json`:
+`json-key-diff -o diff.json test1.json test2.json `:
 
 ```json
 {
-    "test-data/test1.json": {
+    "test1.json": {
         "random6": "Just in test 2",
         "random14": "Just in test 2"
     },
