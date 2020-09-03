@@ -1,22 +1,22 @@
 const fs = require('fs');
 
 module.exports = (compareFile, withFile, outputFile) => {
-
-    try {
-        const fileOne = fs.readFile(compareFile);
-    } catch (err) {
-        console.error(`File ${compareFile} couldn't open file ...`);
-        return;
+    function readFile(path) {
+        try {
+            const file = fs.readFileSync(path);
+            try {
+                return JSON.parse(file);
+            } catch (err) {
+                console.error(`File '${path}': Invalid JSON ...`);
+                return null;
+            }
+        } catch (err) {
+            console.error(`File '${path}': couldn't open file ...`);
+            return null;
+        }
     }
 
-    try {
-        const fileTwo = fs.readFile(withFile);
-    } catch (err) {
-        console.error(`File ${withFile} couldn't open file ...`);
-        return;
-    }
-
-    console.log(`Compare ${compareFile} with ${withFile}:`);
+    console.log(`Compare '${compareFile}' with '${withFile}':`);
 
     if (outputFile) {
         console.log(`Write differences to ${outputFile}`);
