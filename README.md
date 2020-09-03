@@ -6,3 +6,6 @@ compare two json files with each other by keys. It prints out the differences to
 ```bash
 npm install --global json-key-diff
 ```
+
+## usage
+tbd

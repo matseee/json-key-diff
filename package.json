@@ -1,6 +1,6 @@
 {
   "name": "json-key-diff",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha1",
   "description": "compare two json files with each other by keys",
   "main": "src/index.js",
   "bin": "src/index.js",
