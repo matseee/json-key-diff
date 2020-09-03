@@ -9,8 +9,6 @@ const params = args.parse(process.argv, {
     name: 'json-key-diff'
 });
 
-console.log(params);
-
 if (params.f && params.w) {
     jsonKeyDiff(params.f, params.w, params.o);
 } else {
