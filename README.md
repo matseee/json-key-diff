@@ -54,7 +54,7 @@ npm install --global json-key-diff
         "random6": "Just in test 2",
         "random14": "Just in test 2"
     },
-    "test-data/test2.json": {
+    "test2.json": {
         "random7": "Just in test 1"
     }
 }
