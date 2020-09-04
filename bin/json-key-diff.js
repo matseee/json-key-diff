@@ -30,7 +30,7 @@ function findDifference(f1, f2) {
 function printDifferences(differences) {
     for (var key in differences) {
         console.log(`\nMissing Keys in file '${key}':`);
-        console.log(JSON.stringify(differences[ key ], null, 4));
+        console.log('\x1b[31m', JSON.stringify(differences[ key ], null, 4), '\x1b[0m');
     }
 }
 
