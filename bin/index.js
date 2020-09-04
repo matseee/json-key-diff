@@ -10,8 +10,8 @@ const params = args.parse(process.argv, {
     value: '<file1> <file2> ...'
 });
 
-if (args.sub[ 0 ] && args.sub[ 1 ]) {
-    jsonKeyDiff(args.sub[ 0 ], args.sub[ 1 ], params.o);
+if (args.sub.length >= 2) {
+    jsonKeyDiff(args.sub, params.o);
 } else {
     args.showHelp();
 }
