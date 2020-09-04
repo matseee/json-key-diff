@@ -1,9 +1,19 @@
 {
-    "test-data/test1.json": {
+    "test1.json": {
+        "random6": "Just in test 2",
+        "random14": "Just in test 2",
+        "rannnndooom": "just in test3 :)"
+    },
+    "test2.json": {
+        "random7": "Just in test 1",
+        "rannnndooom": "just in test3 :)"
+    },
+    "test3.json": {
+        "random1": "In both",
+        "random4": "In both",
+        "random7": "Just in test 1",
+        "random9": "In both",
         "random6": "Just in test 2",
         "random14": "Just in test 2"
-    },
-    "test-data/test2.json": {
-        "random7": "Just in test 1"
     }
 }
