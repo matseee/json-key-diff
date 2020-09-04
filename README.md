@@ -1,7 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/matseee/json-key-diff/LICENSE)
 [![npm version](https://badge.fury.io/js/json-key-diff.svg)](https://badge.fury.io/js/json-key-diff)
 # json-key-diff
-compare two json files with each other by keys. It prints out the differences to console or to a file.
+compare multiple json files with each other. It prints out the differences to console or to a file.
 
 ## installation
 ```bash
@@ -10,7 +10,7 @@ npm install --global json-key-diff
 
 ## usage
 ```
-  Usage: json-key-diff [options] [command] <file1> <file2>
+  Usage: json-key-diff [options] [command] <file1> <file2> ...
   
   Commands:
     help     Display help

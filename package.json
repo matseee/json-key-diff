@@ -1,7 +1,7 @@
 {
   "name": "json-key-diff",
   "version": "1.0.0",
-  "description": "compare two json files with each other by keys and prints out the differences",
+  "description": "compare multiple json-files with each other",
   "main": "bin/index.js",
   "bin": "bin/index.js",
   "repository": {

@@ -7,12 +7,11 @@ args.option('o', 'Output-Filepath');
 
 const params = args.parse(process.argv, {
     name: 'json-key-diff',
-    value: '<file1> <file2>'
+    value: '<file1> <file2> ...'
 });
 
-
-if (args.sub[0] && args.sub[1]) {
-    jsonKeyDiff(args.sub[0], args.sub[1], params.o);
+if (args.sub[ 0 ] && args.sub[ 1 ]) {
+    jsonKeyDiff(args.sub[ 0 ], args.sub[ 1 ], params.o);
 } else {
     args.showHelp();
 }
