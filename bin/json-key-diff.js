@@ -34,6 +34,8 @@ function printDifferences(differences) {
     }
 }
 
+let exitCode = 0;
+
 module.exports = (filePaths, outputFilePath) => {
 
     // Read every file
@@ -42,7 +44,7 @@ module.exports = (filePaths, outputFilePath) => {
         const tmpFile = readFile(filePath);
 
         if (tmpFile === null) {
-            process.exitCode = 1;
+            exitCode = 1;
             return;
         } else {
             files.push(tmpFile);
@@ -59,6 +61,7 @@ module.exports = (filePaths, outputFilePath) => {
             } else {
                 const diff = findDifference(files[ y ], files[ i ]);
                 for (var key in diff) {
+                    exitCode = 1;
                     missingKeys[ key ] = diff[ key ];
                 }
             }
@@ -81,11 +84,5 @@ module.exports = (filePaths, outputFilePath) => {
         }
     }
 
-    process.exitCode = 0;
-    for (var key in allMissingKeys) {
-        if (allMissingKeys[ key ] !== {}) {
-            process.exitCode = 1;
-            break;
-        }
-    }
+    process.exitCode = exitCode;
 }
