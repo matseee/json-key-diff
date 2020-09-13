@@ -1,4 +1,6 @@
 const fs = require('fs');
+const chalk = require('chalk');
+const log = console.log;
 
 function readFile(path) {
     try {
@@ -29,8 +31,8 @@ function findDifference(f1, f2) {
 
 function printDifferences(differences) {
     for (var key in differences) {
-        console.log(`\nMissing Keys in file '${key}':`);
-        console.log('\x1b[31m', JSON.stringify(differences[ key ], null, 4), '\x1b[0m');
+        log(chalk.yellow(`\nMissing Keys in file '${key}':`));
+        log(chalk.red(JSON.stringify(differences[ key ], null, 4)));
     }
 }
 
