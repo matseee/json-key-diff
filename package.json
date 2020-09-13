@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/matseee/json-key-diff#readme",
   "dependencies": {
-    "args": "^5.0.1"
+    "args": "^5.0.1",
+    "chalk": "^4.1.0"
   }
 }
