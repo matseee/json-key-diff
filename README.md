@@ -1,4 +1,4 @@
-## json-key-diff &middot; [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/matseee/json-key-diff/LICENSE) [![npm version](https://badge.fury.io/js/json-key-diff.svg)](https://badge.fury.io/js/json-key-diff)
+## json-key-diff &middot; [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/matseee/json-key-diff/blob/master/LICENSE) [![npm version](https://badge.fury.io/js/json-key-diff.svg)](https://badge.fury.io/js/json-key-diff)
 compare multiple json files with each other. It prints out the differences to console or to a file.
 
 ### installation
